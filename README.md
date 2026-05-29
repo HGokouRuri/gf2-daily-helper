@@ -1,6 +1,10 @@
 # gf2-daily-helper
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/chesha1/gf2-daily-helper)
 
+> [!IMPORTANT]
+> 本脚本目前已失效，相关说明见 [issue #163](https://github.com/chesha1/gf2-daily-helper/issues/163)。  
+> 由于本人已经退游，项目后续将不再维护。感谢大家一直以来的使用与理解。
+
 Girls' Frontline 2 Exilium Official Community Check-in Helper
 
 [少前 2 国服官网社区](https://gf2-bbs.sunborngame.com/)每日任务助手
