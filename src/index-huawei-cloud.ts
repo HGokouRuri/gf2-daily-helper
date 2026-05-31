@@ -1,5 +1,5 @@
 // huawei cloud FunctionGraph entrypoint
-// use tsc --module CommonJS to compile to CommonJS
+// Build as a Node 18 CommonJS bundle for FunctionGraph's index.handler loader.
 
 import crypto from 'node:crypto';
 import { loginPayload, DailyTask } from './service.js';
