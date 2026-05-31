@@ -1,4 +1,4 @@
-<h1>Github Actions 部署方法</h1>
+<h1>GitHub Actions 部署方法</h1>
 
 - [如果你是熟练的 GitHub 使用者](#如果你是熟练的-github-使用者)
 - [如果你是不太懂 GitHub 的用户](#如果你是不太懂-github-的用户)
@@ -7,7 +7,7 @@
 ## 如果你是熟练的 GitHub 使用者
 部署步骤：
 1. 利用模板创建自己的仓库（或者 Fork 本仓库，不过不建议）
-2. 添加两个仓库 secrets `ACCOUNT_NAME` 和 `PASSWORD`，填写自己的散爆账号和密码
+2. 添加三个仓库 secrets `ACCOUNT_NAME`、`PASSWORD` 和 `ENCRYPTION_KEY`，填写自己的散爆账号、密码和登录加密密钥，含义见 [通用配置说明](./configuration.md)
 3. 添加仓库 variables `RUN_TASK`，并将值设置为 true
 4. 点击仓库的 Actions，再点击 I understand my workflows, go ahead and enable them 启用 Actions
 5. 在侧边栏找到 Scheduled Job 并点击，再点击右侧的 Enable workflow 启用 Actions
@@ -23,9 +23,9 @@
 4. 选择 Secrets and variables - Actions
 5. 添加 Repository secrets，如下图
    ![3](./assets/github-actions-3.png)
-6. 添加两个 Repository secrets `ACCOUNT_NAME` 和 `PASSWORD`，Secret 的内容填写自己的散爆账号和密码，如下图
+6. 添加三个 Repository secrets `ACCOUNT_NAME`、`PASSWORD` 和 `ENCRYPTION_KEY`，Secret 的内容分别填写自己的散爆账号、密码和登录加密密钥。`ENCRYPTION_KEY` 的当前值见 [通用配置说明](./configuration.md)
    ![4](./assets/github-actions-4.png)
-7. 添加好后效果如下图
+7. 添加好后效果如下图。如果截图里只显示了两个 secrets，以文字说明为准，请额外添加 `ENCRYPTION_KEY`
    ![5](./assets/github-actions-5.png)
 8. 添加 Repository variables `RUN_TASK`，值为 `true`，添加好后效果如下图
    ![6](./assets/github-actions-6.png)

@@ -12,7 +12,17 @@ pnpm install
 
 ## 2. 配置
 
-到 `src/index-local.ts` 中配置你的账号信息
+到 `src/index-local.ts` 中配置你的账号信息：
+
+```ts
+const CONFIG = {
+    ACCOUNT_NAME: 'your_account_name_here',
+    PASSWORD: 'your_password_here',
+    ENCRYPTION_KEY: 'encrypt_key_here',
+};
+```
+
+`ENCRYPTION_KEY` 的当前值和配置项说明见 [通用配置说明](./configuration.md)。
 
 ## 3. 运行
 
